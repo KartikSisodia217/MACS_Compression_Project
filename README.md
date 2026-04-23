@@ -25,14 +25,28 @@ Shrinkr is a Chrome Extension designed to compress text, images, audio, and vide
 *   **Quality Assessment:** Calculates Peak Signal-to-Noise Ratio (PSNR) for lossy image compression to track quality loss.
 *   **Graceful Error Handling:** Invalid file types and processing errors are caught and shown cleanly in the UI.
 
-## Installation
-To test and install the `.crx` file (or unpacked extension) in Chrome:
+## Installation & Deployment
+Shrinkr is provided as both a production-ready `.crx` package and a raw source directory. To ensure successful evaluation, please follow the instructions below.
 
-1. Open Google Chrome and navigate to `chrome://extensions`.
-2. Toggle the **Developer Mode** switch in the top-right corner to **ON**.
-3. *Option A (Direct .crx):* Download the `Shrinkr.crx` file from this repository and drag it directly onto the `chrome://extensions` page.
-4. *Option B (Load Unpacked):* Click **Load unpacked** and select the folder containing the `manifest.json` file.
-5. Pin the extension to your toolbar for quick access.
+### 💿 Method 1: Production Package (.crx) — Recommended
+This is the standard distribution format for Chrome extensions.
+1.  **Download:** Open the [Shrinkr.crx](Shrinkr.crx) file in this repository and click the **"Download raw file"** button (⬇️).
+    *   *Note: Avoid "Save link as" on the file name, as it may result in binary corruption.*
+2.  **Navigate:** Open Chrome and go to `chrome://extensions/`.
+3.  **Initialize:** Ensure the **"Developer mode"** toggle in the top-right is **ON**.
+4.  **Deploy:** Drag and drop the downloaded `Shrinkr.crx` file onto the extensions page.
+5.  **Pin:** Pin **Shrinkr** from the extensions toolbar for easy access.
+
+> [!IMPORTANT]
+> **Chrome Security Policy:** As of Chrome v117+, the browser may occasionally display `CRX_REQUIRED_PROOF_MISSING` for off-store extensions. This is a known browser security restriction for unverified files. If this occurs, please use **Method 2** below to load the source directly.
+
+### 🛠️ Method 2: Developer Source (Load Unpacked)
+This method is the industry standard for code review and avoids all browser signature restrictions.
+1.  **Download:** Clone this repository or download the ZIP of the source code.
+2.  **Navigate:** Open `chrome://extensions/` and enable **Developer mode**.
+3.  **Load:** Click the **"Load unpacked"** button in the top-left.
+4.  **Select:** Choose the root project folder (the one containing `manifest.json`).
+
 
 ## How to Use
 1. Click the Shrinkr icon in the Chrome toolbar to open the extension popup.

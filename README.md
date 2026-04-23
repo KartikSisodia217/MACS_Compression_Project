@@ -28,7 +28,7 @@ Shrinkr is a Chrome Extension designed to compress text, images, audio, and vide
 ## Installation & Deployment
 Shrinkr is provided as both a production-ready `.crx` package and a raw source directory. To ensure successful evaluation, please follow the instructions below.
 
-### 💿 Method 1: Production Package (.crx) — Recommended
+###  Method 1: Production Package (.crx) — Recommended
 This is the standard distribution format for Chrome extensions.
 1.  **Download:** Open the [Shrinkr.crx](Shrinkr.crx) file in this repository and click the **"Download raw file"** button (⬇️).
     *   *Note: Avoid "Save link as" on the file name, as it may result in binary corruption.*
@@ -40,13 +40,12 @@ This is the standard distribution format for Chrome extensions.
 > [!IMPORTANT]
 > **Chrome Security Policy:** As of Chrome v117+, the browser may occasionally display `CRX_REQUIRED_PROOF_MISSING` for off-store extensions. This is a known browser security restriction for unverified files. If this occurs, please use **Method 2** below to load the source directly.
 
-### 🛠️ Method 2: Developer Source (Load Unpacked)
+###  Method 2: Developer Source (Load Unpacked)
 This method is the industry standard for code review and avoids all browser signature restrictions.
 1.  **Download:** Clone this repository or download the ZIP of the source code.
 2.  **Navigate:** Open `chrome://extensions/` and enable **Developer mode**.
 3.  **Load:** Click the **"Load unpacked"** button in the top-left.
-4.  **Select:** Choose the root project folder (the one containing `manifest.json`).
-
+4.  **Select:** Choose the root project folder (the one containing `manifest.json`)(the one where you cloned the repository).
 
 ## How to Use
 1. Click the Shrinkr icon in the Chrome toolbar to open the extension popup.
